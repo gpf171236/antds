@@ -17,6 +17,9 @@ li{
   font-weight: normal;
   letter-spacing: -1px;
 }
+.nof{
+  text-align:none;
+}
 
 .welcome {
   height: 328px;
@@ -38,17 +41,29 @@ li{
   width: 200px;
   height:200px;
 }
-#components-layout-demo-top-side-2 .logo {
+/* #components-layout-demo-top-side-2 .logo {
   width: 120px;
   height: 31px;
   background: rgba(255, 255, 255, 0.2);
   margin: 16px 28px 16px 0;
   float: left;
+} */
+/* #components-layout-demo-top-side .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 28px 16px 0;
+  float: left;
+} */
+.kont{
+  position: absolute;
+  left:20px;
 }
-#components-layout-demo-top-side .logo {
-  width: 120px;
-  height: 31px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px 28px 16px 0;
-  float: left;
+.onts{
+  position: absolute;
+  left:50px;
+}
+.kkks{
+  position: absolute;
+  left:0;
 }
