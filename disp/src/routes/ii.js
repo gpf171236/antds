@@ -2,6 +2,11 @@ import React from 'react';
 import { connect } from 'dva';
 import styles from './IndexPage.css';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Link, Router, Route, Switch } from 'dva/router';
+import Sty from '../js/Sty' 
+import Ma from './ma'
+import Ks from './Ks'
+import { IconMap } from 'antd/lib/result';
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -9,28 +14,18 @@ const { Header, Content, Footer, Sider } = Layout;
 function Ii({ dispatch, namesss }) {
   console.log(namesss)
   return (
-    <div className={styles.normal}>
-      <Layout>
-        {/* <Header className="header">
-      <div className="logo" />
-      <Menu
-        theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['2']}
-        style={{ lineHeight: '64px' }}
-      >
-        <Menu.Item key="1" className={styles.nole}>nav 1</Menu.Item>
-        <Menu.Item key="2">nav 2</Menu.Item>
-        <Menu.Item key="3">nav 3</Menu.Item>
-      </Menu>
-    </Header> */}
-        <Content style={{ padding: '0 50px', }}>
-          <Breadcrumb style={{ margin: '16px 0' }}>
+    <div style={{ height: '100%' }}>
+      <Layout style={{ height: '100%' }}>
+        <Header style={{background:'white'}}>
+        <div className={styles.magts}><img src='http://ww3.sinaimg.cn/bmiddle/864f4c14jw1ekdknpw8vsg205u04c4qp.gif' /></div>
+    </Header>
+        <Content>
+          {/* <Breadcrumb style={{ margin: '16px 0' }}>
             <Breadcrumb.Item>Home</Breadcrumb.Item>
             <Breadcrumb.Item>List</Breadcrumb.Item>
             <Breadcrumb.Item>App</Breadcrumb.Item>
-          </Breadcrumb>
-          <Layout style={{ padding: '24px 0', background: '#fff', }}>
+          </Breadcrumb> */}
+          <Layout style={{ padding: '24px 0', background: '#fff', height: '100%' }}>
             <Sider width={200} style={{ background: '#fff' }}>
               <Menu
                 mode="inline"
@@ -49,11 +44,11 @@ function Ii({ dispatch, namesss }) {
                 >
                   <Menu.Item key="1" className={styles.kkks}>
                     <div className={styles.onts}>
-                    <Icon type="setting" />
-                    系统配置项
+                      <Icon type="setting" />
+                      <Link to="/ma">系统配置项</Link>
                     </div>
-                    </Menu.Item>
-                  <Menu.Item key="2" ><div className={styles.onts}><Icon type="setting" />系统入口</div></Menu.Item>
+                  </Menu.Item>
+                  <Menu.Item key="2" ><div className={styles.onts}><Icon type="setting" /><Link to="/ks">系统入口</Link></div></Menu.Item>
                   <Menu.Item key="3"><div className={styles.onts}><Icon type="bars" />菜单</div></Menu.Item>
                   <Menu.Item key="4"><div className={styles.onts}><Icon type="solution" />审计日志</div></Menu.Item>
                   <Menu.Item key="5"><div className={styles.onts}><Icon type="solution" />公告通知</div></Menu.Item>
@@ -101,7 +96,10 @@ function Ii({ dispatch, namesss }) {
                 </SubMenu>
               </Menu>
             </Sider>
-            <Content style={{ padding: '0 24px', minHeight: 280 }}>Content</Content>
+            <Content style={{ padding: '0 24px', minHeight: 280, height: '100%' }}>
+                  <Route path="/ma"  component={Ma} />
+                  <Route path="/ks"  component={Ks} />
+            </Content>
           </Layout>
         </Content>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>

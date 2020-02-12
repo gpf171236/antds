@@ -8,8 +8,8 @@ function IndexPage({name}) {
   console.log(name)
   return (
     <div className={styles.normal}>
-      <Ii />
-      <Ma />
+      <Ii/>
+      {/* <Ma /> */}
     </div>
   );
 }
