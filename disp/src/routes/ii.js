@@ -15,8 +15,8 @@ function Ii({ dispatch, namesss }) {
   console.log(namesss)
   return (
     <div style={{ height: '100%' }}>
-      <Layout style={{ height: '100%' }}>
-        <Header style={{background:'white'}}>
+      <Layout style={{ height: '100%',background:'#ccc'}}>
+        <Header style={{background:'white',borderBottom:'1px solid #ccc'}}>
         <div className={styles.magts}><img src='http://ww3.sinaimg.cn/bmiddle/864f4c14jw1ekdknpw8vsg205u04c4qp.gif' /></div>
     </Header>
         <Content>
@@ -25,7 +25,7 @@ function Ii({ dispatch, namesss }) {
             <Breadcrumb.Item>List</Breadcrumb.Item>
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb> */}
-          <Layout style={{ padding: '24px 0', background: '#fff', height: '100%' }}>
+          <Layout style={{ padding: '0 0', background: '#fff', height: '100%' }}>
             <Sider width={200} style={{ background: '#fff' }}>
               <Menu
                 mode="inline"
@@ -96,7 +96,7 @@ function Ii({ dispatch, namesss }) {
                 </SubMenu>
               </Menu>
             </Sider>
-            <Content style={{ padding: '0 24px', minHeight: 280, height: '100%' }}>
+            <Content style={{ marginLeft:'24px', minHeight: 280, height: '100%',background:'red' }}>
                   <Route path="/ma"  component={Ma} />
                   <Route path="/ks"  component={Ks} />
             </Content>
