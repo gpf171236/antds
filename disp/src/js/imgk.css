@@ -9,7 +9,5 @@ li{
     position: absolute;
     left:0;
     top:0;
-  }
-  .back{
-      background-color:red;
+    border-bottom:1px solid;
   }
