@@ -96,7 +96,7 @@ function Ii({ dispatch, namesss }) {
                 </SubMenu>
               </Menu>
             </Sider>
-            <Content style={{ marginLeft:'24px', minHeight: 280, height: '100%',background:'red' }}>
+            <Content style={{ marginLeft:'24px', minHeight: 280,background:'red' }}>
                   <Route path="/ma"  component={Ma} />
                   <Route path="/ks"  component={Ks} />
             </Content>
