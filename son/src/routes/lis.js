@@ -64,10 +64,10 @@ function Lis({ dispatch, namesss }) {
               </span>
                                 }
                             >
-                                <Menu.Item key="5"><div className={styles.onts}><Icon type="apple" /><Link to="/ma">组织机构</Link></div></Menu.Item>
-                                <Menu.Item key="6"><div className={styles.onts}><Icon type="trademark" /><Link to="/mb">角色</Link></div></Menu.Item>
-                                <Menu.Item key="7"><div className={styles.onts}><Icon type="user" /><Link to="/mc">用户</Link></div></Menu.Item>
-                                <Menu.Item key="8"><div className={styles.onts}><Icon type="profile" /><Link to="/md">班组管理</Link></div></Menu.Item>
+                                <Menu.Item key="5"><Link to="/ma"><div className={styles.onts}><Icon type="apple" />组织机构</div></Link></Menu.Item>
+                                <Menu.Item key="6"><Link to="/mb"><div className={styles.onts}><Icon type="trademark" />角色</div></Link></Menu.Item>
+                                <Menu.Item key="7"><Link to="/mc"><div className={styles.onts}><Icon type="user" />用户</div></Link></Menu.Item>
+                                <Menu.Item key="8"><Link to="/md"><div className={styles.onts}><Icon type="profile" />班组管理</div></Link></Menu.Item>
                             </SubMenu>
                             <SubMenu
                                 key="sub3"

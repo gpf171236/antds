@@ -1,0 +1,64 @@
+*{
+    padding:0;
+    margin:0;
+}
+.none{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.ak{
+    height:50px;
+    border-bottom:1px solid #e9e9e9 ;
+    margin-bottom:20px;
+}
+.wa{
+    padding:20px 0;
+}
+.Noe{
+    width:50px;
+}
+.por{
+    border-left:1px solid #e9e9e9;
+    border-right:1px solid #e9e9e9;
+    border-top:1px solid #e9e9e9;
+}
+.poa{
+    border-right:1px solid #e9e9e9;
+}
+.npmkt{
+    padding:1px;
+}
+.bot{
+margin-left:0;
+}
+.wer{
+    width:1240px;
+    height:32px;
+    margin-bottom:20px;
+    position: relative;
+}
+.niu{
+    position: absolute;
+    left:0;
+}
+.nput{
+    width:200px;
+    margin:0 auto;
+    position: relative;
+}
+.jsn{
+    position: absolute;
+    left:67px;
+    top:5px;
+    z-index:33;
+    color:black;
+}
+.yarns{
+    width:130px;
+    position: absolute;
+    left:138px;
+}
+.yd{
+    padding-left:140px;
+}
