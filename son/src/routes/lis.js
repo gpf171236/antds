@@ -2,6 +2,11 @@ import React from 'react';
 import { connect } from 'dva';
 import styles from './IndexPage.css';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Link, Router, Route, Switch } from 'dva/router';
+import Ma from './ma'
+import Mb from './mb'
+import Mc from './mc'
+import Md from './md'
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -41,7 +46,7 @@ function Lis({ dispatch, namesss }) {
                                     <span className={styles.kont}>
                                         <Icon type="bank" />
                                         系统
-              </span>
+                                    </span>
                                 }
                             >
                                 <Menu.Item key="1"><div className={styles.onts}><Icon type="setting" />系统配置项</div></Menu.Item>
@@ -59,10 +64,10 @@ function Lis({ dispatch, namesss }) {
               </span>
                                 }
                             >
-                                <Menu.Item key="5">option5</Menu.Item>
-                                <Menu.Item key="6">option6</Menu.Item>
-                                <Menu.Item key="7">option7</Menu.Item>
-                                <Menu.Item key="8">option8</Menu.Item>
+                                <Menu.Item key="5"><div className={styles.onts}><Icon type="apple" /><Link to="/ma">组织机构</Link></div></Menu.Item>
+                                <Menu.Item key="6"><div className={styles.onts}><Icon type="trademark" /><Link to="/mb">角色</Link></div></Menu.Item>
+                                <Menu.Item key="7"><div className={styles.onts}><Icon type="user" /><Link to="/mc">用户</Link></div></Menu.Item>
+                                <Menu.Item key="8"><div className={styles.onts}><Icon type="profile" /><Link to="/md">班组管理</Link></div></Menu.Item>
                             </SubMenu>
                             <SubMenu
                                 key="sub3"
@@ -100,15 +105,11 @@ function Lis({ dispatch, namesss }) {
                             <Breadcrumb.Item>List</Breadcrumb.Item>
                             <Breadcrumb.Item>App</Breadcrumb.Item>
                         </Breadcrumb> */}
-                        <Content
-                            style={{
-                                background: '#fff',
-                                padding: 24,
-                                marginTop: 24,
-                                minHeight: 280,
-                            }}
-                        >
-                            Content
+                        <Content style={{background: '#fff',padding: 24,marginTop: 24, minHeight: 280,height:''}}>
+                            <Route path="/ma"  component={Ma} />
+                            <Route path="/mb"  component={Mb} />
+                            <Route path="/mc"  component={Mc} />
+                            <Route path="/md"  component={Md} />
         </Content>
                     </Layout>
                 </Layout>

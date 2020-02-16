@@ -42,6 +42,7 @@ li{
 .onts{
   position: absolute;
   left:50px;
+  color: rgba(0, 0, 0, 0.65);
 }
 .kont{
   position: absolute;
@@ -57,4 +58,13 @@ li{
 .magts img{
   width:200px;
   height:64px;
+}
+.mani{
+  width:100%;
+  height:auto;
+  background:red;
+}
+.nokt{
+  position: absolute;
+  left:0;
 }
