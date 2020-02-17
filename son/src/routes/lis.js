@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import styles from './IndexPage.css';
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu, Breadcrumb, Icon, Table } from 'antd';
 import { Link, Router, Route, Switch } from 'dva/router';
 import Ma from './ma'
 import Mb from './mb'
@@ -105,12 +105,12 @@ function Lis({ dispatch, namesss }) {
                             <Breadcrumb.Item>List</Breadcrumb.Item>
                             <Breadcrumb.Item>App</Breadcrumb.Item>
                         </Breadcrumb> */}
-                        <Content style={{background: '#fff',padding: 24,marginTop: 24, minHeight: 280,height:''}}>
+                        <Content style={{background: '#fff',padding: 24,marginTop: 24, minHeight: 280,flex:'none'}} >
                             <Route path="/ma"  component={Ma} />
                             <Route path="/mb"  component={Mb} />
                             <Route path="/mc"  component={Mc} />
                             <Route path="/md"  component={Md} />
-        </Content>
+                            </Content>
                     </Layout>
                 </Layout>
             </Layout>
