@@ -14,7 +14,7 @@ function Mb() {
     <div style={{ position: 'relative' }}>
 
       <div>
-        <Sou  />
+        <Sou />
         <Anniu />
         <Nei />
       </div>

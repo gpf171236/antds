@@ -40,10 +40,10 @@ class Anniu extends React.Component {
           onCancel={this.handleCancel}
           footer={[
             <Button key="backsubmitb" onClick={this.handleCancel}>
-              保存
+              取消
             </Button>,
             <Button key="submitb" type="primary"  onClick={this.handleOk}>
-              取消
+              保存
             </Button>,
           ]}
         >

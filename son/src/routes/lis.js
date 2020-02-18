@@ -99,24 +99,27 @@ function Lis({ dispatch, namesss }) {
                             </SubMenu>
                         </Menu>
                     </Sider>
-                    <Layout style={{ padding: '0 24px 24px' }}>
+                    <Layout style={{ padding: '0 24px 24px',height:'100%',overflow:'auto'}} >
                         {/* <Breadcrumb style={{ margin: '16px 0' }}>
                             <Breadcrumb.Item>Home</Breadcrumb.Item>
                             <Breadcrumb.Item>List</Breadcrumb.Item>
                             <Breadcrumb.Item>App</Breadcrumb.Item>
                         </Breadcrumb> */}
-                        <Content style={{background: '#fff',padding: 24,marginTop: 24, minHeight: 280,flex:'none'}} >
+                        <div style={{width:'100%',height:'100%',overflow:'auto'}}>
+                        <Content style={{background: '#fff',padding: 24,marginTop: 24, minHeight: 280}} >
                             <Route path="/ma"  component={Ma} />
                             <Route path="/mb"  component={Mb} />
                             <Route path="/mc"  component={Mc} />
                             <Route path="/md"  component={Md} />
                             </Content>
+                            </div>
                     </Layout>
                 </Layout>
             </Layout>
         </div>
     );
 }
+// ,flex:'none'
 
 // Ii=connect((state)=>{
 //   return{
