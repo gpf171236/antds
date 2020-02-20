@@ -11,18 +11,26 @@ const columns = [
         // width:'400px',
         height:'20px',
         render: text => <a>{text}</a>,
+        defaultSortOrder: 'descend',
+        sorter: (a, b) => a.age - b.age,
     },
     {
         title: '用户编号',
         dataIndex: 'age',
+        defaultSortOrder: 'descend',
+        sorter: (a, b) => a.age - b.age,
     },
     {
         title: '姓名',
         dataIndex: 'address',
+        defaultSortOrder: 'descend',
+        sorter: (a, b) => a.age - b.age,
     },
     {
         title: '角色',
         dataIndex: 'a',
+        defaultSortOrder: 'descend',
+        sorter: (a, b) => a.age - b.age,
     },
     {
         title: '邮箱地址',
@@ -62,6 +70,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
 
     },
     {
@@ -76,6 +85,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
     },
     {
         key: '3',
@@ -89,6 +99,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
     },
     {
         key: '4',
@@ -102,6 +113,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
     },
     {
         key: '5',
@@ -115,6 +127,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
     },
     {
         key: '6',
@@ -128,6 +141,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
     },
     {
         key: '7',
@@ -141,6 +155,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
     },
     {
         key: '8',
@@ -154,6 +169,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
     },
     {
         key: '9',
@@ -167,6 +183,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
     },
     {
         key: '10',
@@ -180,6 +197,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
     },
     {
         key: '11',
@@ -193,6 +211,7 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
     },
     {
         key: '12',
@@ -206,6 +225,21 @@ const data = [
         e: '未验证',
         f: '已启用',
         g: '未锁定',
+        h: '未锁定',
+    },
+    {
+        key: '13',
+        name: 'jz2',
+        age: 99,
+        address: '',
+        a: 'Admin',
+        b: '',
+        c: '18788546975',
+        d: '已验证',
+        e: '未验证',
+        f: '已启用',
+        g: '未锁定',
+        h: '未锁定',
     },
 ];
 // rowSelection object indicates the need for row selection
@@ -221,10 +255,8 @@ const rowSelection = {
 
 function Ye() {
     return (
-
         <div style={{ position: 'relative' }}>
-            <Table rowSelection={rowSelection} columns={columns} dataSource={data}  pagination={false} bordered={true} y={false}  />
-            
+            <Table rowSelection={rowSelection} columns={columns} dataSource={data}  pagination={false} bordered={true} y={false} scroll={{}} /> 
         </div>
     );
 }

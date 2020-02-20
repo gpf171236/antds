@@ -3,7 +3,8 @@ import { connect } from 'dva';
 import styles from './nas.css';
 import { Tabs } from 'antd';
 import Xuan from './xuan';
-import Zc from './zc';
+import Zc from './fens/zc';
+import Zd from './fens/zd';
 
 const { TabPane } = Tabs;
 

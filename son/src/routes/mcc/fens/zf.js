@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import styles from './nas.css';
+import styles from './nass.css';
 import {
     Form,
     Input,
@@ -53,7 +53,7 @@ const residences = [
     },
 ];
 
-class Zc extends React.Component {
+class Ze extends React.Component {
     state = {
         confirmDirty: false,
         autoCompleteResult: [],
@@ -126,14 +126,8 @@ class Zc extends React.Component {
                 },
             },
         };
-        const prefixSelector = getFieldDecorator('prefix', {
-            initialValue: '86',
-        })(
-            <Select style={{ width: 70 }}>
-                <Option value="86">+86</Option>
-                <Option value="87">+87</Option>
-            </Select>,
-        );
+        //   const prefixSelector = getFieldDecorator('prefix', {
+        //   });
 
         const websiteOptions = autoCompleteResult.map(website => (
             <AutoCompleteOption key={website}>{website}</AutoCompleteOption>
@@ -141,21 +135,20 @@ class Zc extends React.Component {
 
         return (
             <Form {...formItemLayout} onSubmit={this.handleSubmit}>
-                <Form.Item label="电子邮件">
-                    {getFieldDecorator('email', {
-                        rules: [
-                            {
-                                type: 'email',
-                                message: 'The input is not valid E-mail!',
-                            },
-                            {
-                                required: true,
-                                message: 'Please input your E-mail!',
-                            },
-                        ],
-                    })(<Input />)}
-                </Form.Item>
-                <Form.Item label="密码" hasFeedback>
+                <Form.Item style={{ marginBottom: '15px' }}>
+                            <div style={{ height: 35 }}>
+                                <div style={{ float: 'left', color: 'red', lineHeight: '47px', height: '35px', paddingRight: 4, fontSize: 20 }}>*</div>
+                                <div style={{ color: 'black' }}>用户名</div>
+                            </div>
+                            {getFieldDecorator('e', {
+                                rules: [{ required: true, message: 'Username is required!' }],
+                            })(<Input placeholder="请填写用户名" />)}
+                        </Form.Item>
+                <Form.Item style={{ marginBottom: '15px' }}>
+                <div style={{ height: 35 }}>
+                        <div style={{ float: 'left', color: 'red', lineHeight: '47px', height: '35px', paddingRight: 4, fontSize: 20 }}>*</div>
+                        <div style={{ color: 'black' }}>创建密码</div>
+                    </div>
                     {getFieldDecorator('password', {
                         rules: [
                             {
@@ -166,47 +159,13 @@ class Zc extends React.Component {
                                 validator: this.validateToNextPassword,
                             },
                         ],
-                    })(<Input.Password />)}
+                    })(<Input.Password placeholder="请填写密码" />)}
                 </Form.Item>
-                <Form.Item label={<div style={{height:30,float:'left'}}>确认密码</div>}>
-                    
-                    <div>
-                        {getFieldDecorator('confirm', {
-                            rules: [
-                                {
-                                    required: true,
-                                    message: 'Please confirm your password!',
-                                },
-                                {
-                                    validator: this.compareToFirstPassword,
-                                },
-                            ],
-                        })(<Input.Password onBlur={this.handleConfirmBlur} />)}
-                    </div>
-                </Form.Item>
-                <Form.Item
-                    label={
-                        <span>
-                            昵称&nbsp;
-                <Tooltip title="What do you want others to call you?">
-                                {/* <Icon type="question-circle-o" /> */}
-                            </Tooltip>
-                        </span>
-                    }
-                >
-                    {getFieldDecorator('nickname', {
-                        rules: [{ required: true, message: 'Please input your nickname!', whitespace: true }],
-                    })(<Input />)}
-                </Form.Item>
-
-
-
-
             </Form>
         );
     }
 }
-const KTA = Form.create({ name: 'register' })(Zc);
+const WrappedRegistrationForm = Form.create({ name: 'register' })(Ze);
 
 
-export default KTA;
+export default WrappedRegistrationForm;

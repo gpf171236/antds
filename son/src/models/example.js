@@ -3,7 +3,9 @@ export default {
 
   namespace: 'example',
 
-  state: {},
+  state: {
+    flag:'1'
+  },
 
   subscriptions: {
     setup({ dispatch, history }) {  // eslint-disable-line
@@ -17,8 +19,8 @@ export default {
   },
 
   reducers: {
-    save(state, action) {
-      return { ...state, ...action.payload };
+    setState(state, {payload}) {
+      return { ...state, ...payload };
     },
   },
 

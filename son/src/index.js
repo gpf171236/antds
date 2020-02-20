@@ -1,6 +1,6 @@
 import dva from 'dva';
 import './index.css';
-
+import {two} from "./models/npm"
 // 1. Initialize
 const app = dva();
 
@@ -12,6 +12,6 @@ const app = dva();
 
 // 4. Router
 app.router(require('./router').default);
-
+two(app)
 // 5. Start
 app.start('#root');
