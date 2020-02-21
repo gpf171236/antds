@@ -210,7 +210,7 @@ class Zc extends React.Component {
                                     <div style={{ color: 'black' }}>加入班组</div>
                                 </div>
                                 {getFieldDecorator('select', {
-                                    rules: [{ required: true, message: 'Please select your country!' }],
+                                    rules: [{ required:true, message: 'Please select your country!' }],
                                 })(
                                     <Select placeholder="">
                                         <Option value="china">China</Option>

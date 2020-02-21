@@ -5,6 +5,15 @@ import Fen from './fen';
 
 import { Drawer, Button } from 'antd';
 
+import { Select } from 'antd';
+
+const { Option } = Select;
+
+function handleChange(value) {
+  console.log(`selected ${value}`);
+}
+
+
 class An extends React.Component {
   state = { visible: false, childrenDrawer: false };
 
@@ -72,6 +81,13 @@ class An extends React.Component {
             </Button>
           </div>
         </Drawer>
+        <Button className={styles.bot}>导出到EXCEL</Button>
+        <Select defaultValue="更多操作" style={{ width: 120,textAlign:'center' }} onChange={handleChange} className={styles.bots}>
+      <Option value="jack">Jack</Option>
+      <Option value="lucy">Lucy</Option>
+      <Option value="Yiminghe">yiminghe</Option>
+      <Option value="spy">yiminghe</Option>
+    </Select>
       </div>
     );
   }

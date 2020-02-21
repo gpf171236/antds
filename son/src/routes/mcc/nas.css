@@ -32,6 +32,14 @@
     position: absolute;
     left:0;
 }
+.bot{
+    position: absolute;
+    left:105px;
+}
+.bots{
+    position: absolute;
+    left:250px;
+}
 style{
     float:none;
 }
