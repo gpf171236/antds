@@ -262,3 +262,87 @@ function Ye() {
 }
 
 export default Ye;
+
+
+// class Bz extends React.Component {
+//     state = {
+//         mode: 'inline',
+//         theme: 'light',
+//         arr: [
+//             {
+//                 name:'初一&nbsp;&nbsp;(GVN13)',
+//                 arrs:[{name:'公平夫',age:'24'},{name:'公平夫2',age:'242'}]
+//             },
+//             {
+//                 name:'初二&nbsp;&nbsp;(GVN13)',
+//                 arrs:[{name:'公平夫3',age:'24'},{name:'公平夫25',age:'242'}]
+//             },
+//             {
+//                 name:'初三&nbsp;&nbsp;(GVN13)',
+//                 arrs:[{name:'公平夫4',age:'24'},{name:'公平夫26',age:'242'}]
+//             }
+//         ],
+//         data:''
+//     };
+
+//     //   changeMode = value => {
+//     //     this.setState({
+//     //       mode: value ? 'vertical' : 'inline',
+//     //     });
+//     //   };
+
+//     //   changeTheme = value => {
+//     //     this.setState({
+//     //       theme: value ? 'dark' : 'light',
+//     //     });
+//     //   };
+
+//     render() {
+//         const columns = [
+//             {
+//               title: 'Name',
+//               dataIndex: 'name',
+//               key: 'name',
+//             },
+//             {
+//                 title: 'age',
+//                 dataIndex: 'age',
+//                 key: 'age',
+//               },
+//           ];
+//         return (
+//             <div style={{ position: 'relative' }}>
+//                 <div className={styles.neik}>
+//                     <div style={{ height: 50, borderBottom: '1px solid #e9e9e9' }}>
+//                         <div className={styles.ktmo}>全部班组</div>
+//                     </div>
+//                     <div style={{ padding: '24px 0px 0px 20px' }}>
+//                         <Menu
+//                             style={{ width: 256 }}
+//                             defaultSelectedKeys={['1']}
+//                             defaultOpenKeys={['sub1']}
+//                             mode={this.state.mode}
+//                             theme={this.state.theme}
+//                         >
+//                             {
+//                                 this.state.arr.map((item,index)=>(
+//                                 <Menu.Item key={index} onClick={()=>{
+//                                     this.setState({
+//                                         data:item.arrs
+//                                     })
+//                                 }}>{item.name}</Menu.Item>
+//                                 ))
+//                             }
+//                         </Menu>
+//                     </div>
+
+//                 </div>
+
+//                         <div className={styles.bou}>
+//                             <div></div>
+//                             <Table columns={columns} dataSource={this.state.data} />
+//                         </div>
+//             </div>
+//         );
+//     }
+// }
