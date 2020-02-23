@@ -12,12 +12,14 @@ class Bz extends React.Component {
         arr: [
             {
                 name: '初一  (GVN13)',
-                box: [{ e: '段国涛 (dgt)', s: '学生数2名' }],
+                e:'段国涛 (dgt)',
+                s:'学生数2名',
+                // box: [{ e: '段国涛 (dgt)', s: '学生数2名' }],
                 arrs: [{ name: '公平夫', age: '77' }, { name: '公平夫2', age: '546' }]
             },
             {
                 name: '语言基础班  (IY9RB)',
-                box: [{ e: '1111 (dgt)', s: '学生数2名' }],
+                // box: [{ e: '1111 (dgt)', s: '学生数2名' }],
                 arrs: [{ name: '公平夫3', age: '66' }, { name: '公平夫25', age: '523156' }]
             },
             {
@@ -46,17 +48,18 @@ class Bz extends React.Component {
         ],
         der: '',
         boxs: '',
+        boxa: '',
         data: ''
     };
 
     render() {
-        const columnst=[
-            {
-                title: 'e',
-                dataIndex: 's',
-                key: '1',
-            },
-        ];
+        // const columnst=[
+        //     {
+        //         title: 'e',
+        //         dataIndex: 's',
+        //         key: '1',
+        //     },
+        // ];
         const columns = [
             {
                 title: 'Name',
@@ -99,7 +102,8 @@ class Bz extends React.Component {
                                         
                                         this.setState({
                                             der: item.name,
-                                            boxs: item.box,
+                                            boxs: item.e,
+                                            boxa: item.s,
                                             data: item.arrs
                                             
                                         })
@@ -120,7 +124,11 @@ class Bz extends React.Component {
                             {this.state.der}
                         </div>
                     </div>
-                <div  neiks={columnst} inm={this.state.boxs} style={{padding:'20px 0 '}}></div>
+                    <div>
+                        <div style={{float:'left',padding:'0 20px'}}>{this.state.boxs}</div>
+                        <div style={{float:'left'}}>{this.state.boxa}</div>
+                    </div>
+                {/* <div  neiks={columnst} inm={this.state.boxs} style={{padding:'20px 0 '}}></div> */}
                     
                     <Table columns={columns} dataSource={this.state.data} style={{ padding: '0 20px' }} pagination={false} />
                 </div>
@@ -128,6 +136,4 @@ class Bz extends React.Component {
         );
     }
 }
-
-
 export default Bz;
