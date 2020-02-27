@@ -5,6 +5,15 @@ export default {
 
   state: {
     flag:'1'
+
+
+
+
+
+
+
+
+    
   },
 
   subscriptions: {

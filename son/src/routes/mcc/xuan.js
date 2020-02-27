@@ -49,10 +49,7 @@ function Xuan({dispatch,flag}) {
                         }>管理员</Radio.Button>
                     </Radio.Group>
                 </div>
-
-
             </div>
-
         </div>
     );
 }
