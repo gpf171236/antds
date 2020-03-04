@@ -1,17 +1,20 @@
 <template>
   <div class="hello">
-      99999
+     <Input />
+     <An />
   </div>
 </template>
 
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script>
+import Input from "./y/input";
+import An from "./y/an/an";
 export default {
-  name: "HelloWorld",
   data() {
     return {
     };
   },
+  components: {Input,An}
 };
 </script>
 

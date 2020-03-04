@@ -2,17 +2,13 @@
   <div>
     <div class="na">
       <div >
-        <a-input-search placeholder="输入关键字搜索" style="width: 400px" @search="onSearch" class="an" />
+        <a-input-search placeholder="输入关键字搜索,将搜索[用户名][姓名][邮箱][手机号]" style="width: 500px" @search="onSearch" class="an" />
       </div>
     </div>
-    <Hd style="height:55px" />
-    <He />
   </div>
 </template>
 
 <script>
-import Hd from "./zi/duihua";
-import He from "./zi/zia";
 
 export default {
   data() {
@@ -23,8 +19,6 @@ export default {
       console.log(value);
     }
   },
-
-  components: { He, Hd }
 };
 </script>
 

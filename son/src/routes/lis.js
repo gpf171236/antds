@@ -64,10 +64,10 @@ function Lis({ dispatch, namesss }) {
               </span>
                                 }
                             >
-                                <Menu.Item key="5"><Link to="/ma"><div className={styles.onts}><Icon type="apple" />组织机构</div></Link></Menu.Item>
-                                <Menu.Item key="6"><Link to="/mb"><div className={styles.onts}><Icon type="trademark" />角色</div></Link></Menu.Item>
-                                <Menu.Item key="7"><Link to="/mc"><div className={styles.onts}><Icon type="user" />用户</div></Link></Menu.Item>
-                                <Menu.Item key="8"><Link to="/md"><div className={styles.onts}><Icon type="profile" />班组管理</div></Link></Menu.Item>
+                                <Menu.Item key="6"><Link to="/ma"><div className={styles.onts}><Icon type="apple" />组织机构</div></Link></Menu.Item>
+                                <Menu.Item key="7"><Link to="/mb"><div className={styles.onts}><Icon type="trademark" />角色</div></Link></Menu.Item>
+                                <Menu.Item key="8"><Link to="/mc"><div className={styles.onts}><Icon type="user" />用户</div></Link></Menu.Item>
+                                <Menu.Item key="9"><Link to="/md"><div className={styles.onts}><Icon type="profile" />班组管理</div></Link></Menu.Item>
                             </SubMenu>
                             <SubMenu
                                 key="sub3"
@@ -78,10 +78,10 @@ function Lis({ dispatch, namesss }) {
               </span>
                                 }
                             >
-                                <Menu.Item key="9">option9</Menu.Item>
-                                <Menu.Item key="10">option10</Menu.Item>
-                                <Menu.Item key="11">option11</Menu.Item>
-                                <Menu.Item key="12">option12</Menu.Item>
+                                <Menu.Item key="10">option9</Menu.Item>
+                                <Menu.Item key="11">option10</Menu.Item>
+                                <Menu.Item key="12">option11</Menu.Item>
+                                <Menu.Item key="17">option12</Menu.Item>
                             </SubMenu>
                             <SubMenu
                                 key="sub4"

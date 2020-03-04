@@ -1,4 +1,5 @@
 <template>
+<div style="margin-top:60px">
   <a-table :columns="columns" :dataSource="data" :bordered="true" :pagination="false">
     <a slot="name" slot-scope="text" href="javascript:;">{{text}}</a>
     <span slot="customTitle">角色名称</span>
@@ -15,6 +16,7 @@
       </a>
     </span>
   </a-table>
+  </div>
 </template>
 <script>
 const columns = [{
@@ -70,3 +72,8 @@ export default {
   }
 }
 </script>
+<style>
+/* .ma{
+  margin-top: 
+} */
+</style>
