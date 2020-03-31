@@ -23,7 +23,30 @@ export default {
       console.log(value);
     }
   },
-
+      beforeCreate:function () {
+      alert('实列初始化')
+    },
+    created:function () {
+      alert('初始化完成')
+    },
+    beforeMount:function(){
+      alert('挂载DOM')
+    },
+    mounted:function(){
+      alert('挂载dom渲染')
+    },
+    beforeUpdate:function(){
+      alert('开始更新')
+    },
+    updated:function(){
+      alert('更新渲染完成')
+    },
+    beforeDestroy:function(){
+      alert('卸载前')
+    },
+    bestroyed:function(){
+      alert('卸载完毕')
+    },
   components: { He, Hd }
 };
 </script>

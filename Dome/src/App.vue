@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
     <router-view />
   </div>
 </template>
@@ -19,5 +18,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   height: 100%;
+}
+
+.box{
+  position: relative;
+  /* .box2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    margin: auto;
+  } */
 }
 </style>

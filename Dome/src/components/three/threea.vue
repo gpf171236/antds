@@ -2,6 +2,7 @@
   <div class="hello">
      <Input />
      <An />
+     <Sj />
   </div>
 </template>
 
@@ -9,12 +10,13 @@
 <script>
 import Input from "./y/input";
 import An from "./y/an/an";
+import Sj from "./y/sj";
 export default {
   data() {
     return {
     };
   },
-  components: {Input,An}
+  components: {Input,An,Sj}
 };
 </script>
 

@@ -10,7 +10,6 @@ import { Router, Route, Switch } from 'dva/router';
 function Xuan({dispatch,flag}) {
     console.log(flag)
     return (
-
         <div style={{ position: 'relative' }}>
             <div>
                 <div>
